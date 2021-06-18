@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>PORCENTAJE DE GRASA CORPORAL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/libs/bignumber.js/bignumber.min.js"></script>
+        <script src="js/libs/numeral.js/numeral.min.js"></script>
+
+    </head>
+    <body>
+        <header>
+        <h3>Calculadora de porcentaje corporal</h3>
+        </header>
+        <p> 
+            En la perdida de peso, la grasa corporal juega un papel muy importante, pues esta define nuestros objetivos.
+        </p>
+        <form id="forma" action="javascript:procesa()">
+        <p><em>El borde azul indica obligatorio</em></p> 
+        <p>
+                <label acceskey="O1">
+                    Estatura<br>
+                    <input name="estatura" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}" placeholder="en centimetros"
+                           maxlength="11" size="13">
+                    
+                </label>
+                <br><output id="salidaOp1"></output>
+            </p>
+            <p>
+                <label acceskey="O2">
+                    Peso(kg)<br>
+                    <input name="peso" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}"  placeholder="en kilogramos"
+                           maxlength="11" size="13" >
+                    
+                </label>
+                <br><output id="salidaOp2"></output>
+            </p>
+             <p>
+                <label acceskey="O3">
+                    Circunferencia cintura<br>
+                    <input name="cintura" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="en centimetros"
+                           maxlength="11" size="13" >
+                    
+                </label>
+                <br><output id="salidaOp3"></output>
+            </p>
+            
+            <p>
+                
+                <label acceskey="05">
+                    Edad <br><input name="edad" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}"  maxlength="11" size="13"></label>
+                    <br><output id="salidaOp5"></output> 
+            </p>
+            
+           
+            <p>
+                <br><input type="submit" value="Calcular" acceskey="C">
+            </p>
+             <p>
+                <label acceskey="S">
+                    INDICE DE MASA CORPORAL: 
+                </label>
+                <output id="salidaIMC"></output>
+            </p>
+            <p>
+                <label acceskey="R">
+                    PORCENTAJE DE GRASA CORPORAL: 
+                </label>
+                <output id="salidaGrasa"></output>
+            </p>
+            <p>
+                <label acceskey="M">
+                    CALORIAS DIARIAS: 
+                </label>
+                <output id="salidaCalorias"></output>
+            </p>
+            <img src="grasa.png" style="width: 800px; height:400px">
+                
+        </form>
+        <footer>
+        Copyrigth 2021 Meneses Jimenez Ricardo
+        </footer>
+         <script src="js/CtrlManejoNum.js"></script>
+    </body>
+</html>
